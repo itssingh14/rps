@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Rock, Paper, Scissor</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Rock Paper Scissor</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class=" row info">
+                    <div class="col-sm-6"><h2>Player</h2></div>
+                    <div class="col-sm-6"><ul>
+                        <li><div id="p1" class="score s1"></div></li>
+                        <li><div id="p2" class="score s2"></div></li>
+                        <li><div id="p3" class="score s3"></div></li>
+                        <li><div id="p4" class="score s4"></div></li>
+                        <li><div id="p5" class="score s5"></div></li>
+                    </ul></div>
+                </div>
+                <br>
+                <div class="container-fluid disp">
+                    <h3 id="pres"></h3>
+                    <h3 id="pchoice"></h3>
+                </div>
+                <div class="container-fluid controls">
+                    <div class="row">
+                        <div class="col-sm-4 rock"><button onclick="rock()">rock</button></div>
+                        <div class="col-sm-4 paper"><button onclick="paper()">paper</button></div>
+                        <div class="col-sm-4 scissor"><button onclick="scissor()">scissor</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class=" row info">
+                    <div class="col-sm-6"><h2>CPU</h2></div>
+                    <div class="col-sm-6"><ul>
+                        <li><div id="c1" class="score"></div></li>
+                        <li><div id="c2" class="score"></div></li>
+                        <li><div id="c3" class="score"></div></li>
+                        <li><div id="c4" class="score"></div></li>
+                        <li><div id="c5" class="score"></div></li>
+                    </ul></div>
+                </div>
+                <br>
+                <div class="container-fluid disp">
+                    <h3 id="cres"></h3>
+                    <h3 id="cchoice"></h3>
+                </div>
+            </div>
+        </div>
+        <button onclick="reset()">Start Again</button>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+}
+
+div.info li{
+    float: left;
+    list-style: none;
+    padding: 0.25rem;
+}
+
+div.score{
+    background-color: brown;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
